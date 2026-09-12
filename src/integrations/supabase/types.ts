@@ -14,7 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      sensor_readings: {
+        Row: {
+          accel_x: number | null
+          accel_y: number | null
+          accel_z: number | null
+          activity: number | null
+          animal_id: string
+          body_temperature: number | null
+          device_id: string
+          environmental_temperature: number | null
+          humidity: number | null
+          id: string
+          metadata: Json
+          milk_ec: number | null
+          milk_temperature: number | null
+          milk_yield: number | null
+          recorded_at: string
+          rfid_tag: string | null
+          thi: number | null
+        }
+        Insert: {
+          accel_x?: number | null
+          accel_y?: number | null
+          accel_z?: number | null
+          activity?: number | null
+          animal_id: string
+          body_temperature?: number | null
+          device_id: string
+          environmental_temperature?: number | null
+          humidity?: number | null
+          id?: string
+          metadata?: Json
+          milk_ec?: number | null
+          milk_temperature?: number | null
+          milk_yield?: number | null
+          recorded_at?: string
+          rfid_tag?: string | null
+          thi?: number | null
+        }
+        Update: {
+          accel_x?: number | null
+          accel_y?: number | null
+          accel_z?: number | null
+          activity?: number | null
+          animal_id?: string
+          body_temperature?: number | null
+          device_id?: string
+          environmental_temperature?: number | null
+          humidity?: number | null
+          id?: string
+          metadata?: Json
+          milk_ec?: number | null
+          milk_temperature?: number | null
+          milk_yield?: number | null
+          recorded_at?: string
+          rfid_tag?: string | null
+          thi?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
